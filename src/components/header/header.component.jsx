@@ -4,7 +4,7 @@ import "./header.styles.scss"
 
 const Header = () => (
     <div className="header">
-         <span className="header-items left-side">LOGO</span>
+        <span className="header-items left-side">LOGO</span>
         <span className="header-items right-side">SERVICES</span>
         <span className="header-items">PORTFOLIO</span>
         <span className="header-items">ABOUT</span>

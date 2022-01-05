@@ -1,0 +1,30 @@
+.background-img {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -10rem;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content-section {
+    margin-left: 6rem;
+    margin-right: 6rem;
+
+    .content-title {
+      text-align: center;
+    }
+  }
+}
+
+.portfolio-section{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+        text-align: center;
+    }
+}
