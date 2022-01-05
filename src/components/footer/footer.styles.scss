@@ -1,0 +1,35 @@
+.footer{
+    background-color: #0080ff;
+    display: flex;
+    justify-content: space-around;
+    color: white    ;
+
+    .left-side{
+       margin: 10rem;
+        font-size: 1.3rem;
+        margin-left: 0rem;
+    }
+
+    .right-side{
+        margin-top: 7rem;
+        margin-right: 7rem;
+        margin-bottom: 7rem;
+        
+        .footer-links{
+            display: block;
+            margin: 2rem;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 1.3rem;
+        }
+
+        .socials{
+            margin: 1rem;
+
+            .social-logos{
+                margin: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
