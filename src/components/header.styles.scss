@@ -1,0 +1,10 @@
+.header{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    .header-items{
+        margin: 1rem;
+        cursor: pointer;
+    }
+}
