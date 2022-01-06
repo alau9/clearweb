@@ -1,10 +1,25 @@
 .header{
     margin-top: 2rem;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 
     .header-items{
-        margin: 1rem;
         cursor: pointer;
+        margin: 1rem;
+        
+        .logo{
+            height: 3rem;
+        }
+    }
+    
+    .right-side{
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+    }
+    
+    .button-container{
+        margin-right: 2rem;
+        margin-left: 1rem;
     }
 }
