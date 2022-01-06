@@ -1,19 +1,76 @@
 import React from "react";
-import Banner from "../../components/banner/banner.component";
 import CustomButton from "../../components/custom-button/custom-button.component";
-import Footer from "../../components/footer/footer.component";
+import { useNavigate } from "react-router-dom";
 
 import "./homepage.styles.scss";
 
-const Homepage = () => (
-  <div>
+const Homepage = () => {
+const navigate = useNavigate()
+const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
+   
+ return(
+  <div className="homepage">
     <div
       className="background-img"
       style={{
         backgroundImage: `url("https://i.ibb.co/pj3zK41/Clear-Web-Homepage-Top-Banner.png")`,
       }}
     ></div>
-    <Banner />
+    <div className="icon-container">
+      <div className="icon-section">
+        <div className="icon-item" onClick={() => navigate('/developement')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/GCWX24s/Development-Clear-Web.png"
+            alt="Development-Clear-Web"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => navigate('/design')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/6tgtZnf/Design-Clear-Web.png"
+            alt="Design-Clear-Web"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => navigate('/seo')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/G3Jmrsq/SEO-Clear-Web.png"
+            alt="SEO-Clear-Web"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => navigate('/sitemanager')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/Qf06mmF/Site-Manager-Clear-Web-1.png"
+            alt="Site-Manager-Clear-Web-1"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => navigate('/social')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/n7FKJcr/Social-Media-Clear-Web.png"
+            alt="Social-Media-Clear-Web"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => navigate('/custom')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/RYcfR5T/Custom-Code-Clear-Web.png"
+            alt="Custom-Code-Clear-Web"
+            border="0"
+          />
+        </div>
+      </div>
+    </div>
     <div className="content-container">
       <div className="content-section">
         <h3 className="content-title">
@@ -42,13 +99,62 @@ const Homepage = () => (
       </div>
     </div>
     <div className="portfolio-section">
-      <h1 className="content">See Our Recent Work</h1>
-      <div className="content">
-        <CustomButton>Portfolio</CustomButton>
+      <h1 className="content">See Our Recent Work!</h1>
+      <div className="icon-section">
+        <div className="icon-item" onClick={() => openInNewTab('https://hoochybooch.com/')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/ZKCW0jP/Hoochy-Booch-Kombucha-Logo.png"
+            alt="Hoochy-Booch-Kombucha-Logo"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => openInNewTab('https://festivalshred.com/')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/x1Szz8p/Festival-Shred-Logo.png"
+            alt="Festival-Shred-Logo"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => openInNewTab('https://floathouse.ca/locations/vancouver')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/X5GjVCC/Float-House-Logo.png"
+            alt="Float-House-Logo"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => openInNewTab('https://utterlycrypto.com/')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/S6rHhD8/Utterly-Crypto-Logo.png"
+            alt="Utterly-Crypto-Logo"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => openInNewTab('https://plentyhardkombucha.com/')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/JnzznN5/Plenty-Hard-Kombucha-Logo.png"
+            alt="Plenty-Hard-Kombucha-Logo"
+            border="0"
+          />
+        </div>
+        <div className="icon-item" onClick={() => openInNewTab('https://justgosmoothie.com/')}>
+          <img
+            className="medium"
+            src="https://i.ibb.co/vxh2yHy/Just-Go-Smoothie-logo-CW-sized.png"
+            alt="Just-Go-Smoothie-logo-CW-sized"
+            border="0"
+          />
+        </div>
+      </div>
+      <div className="content" >
+        <div onClick={() => navigate('/portfolio')}><CustomButton>Portfolio</CustomButton></div>
       </div>
     </div>
-    <Banner />
   </div>
-);
+);}
 
 export default Homepage;

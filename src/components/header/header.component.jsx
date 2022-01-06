@@ -26,7 +26,7 @@ return(
             <div className="header-items" onClick={() => openInNewTab('https://www.instagram.com/clearweb.cloud/')}><FontAwesomeIcon icon={['fab', 'instagram']} /></div>
             <div className="header-items" onClick={() => openInNewTab('https://www.youtube.com/channel/UCydv7oPwYWUDjQy7AXcMF8A')}><FontAwesomeIcon icon={['fab', 'youtube']} /></div>
         </div>
-        <div className="button-container"><CustomButton>Pricing</CustomButton></div>
+        <div className="button-container" onClick={() => navigate('/pricing')}><CustomButton>Pricing</CustomButton></div>
         <div>     
   </div>
     </div>
