@@ -1,0 +1,30 @@
+.services-page{
+    display: flex;
+    justify-content: center;
+
+    .title{
+        font-size: 3rem;
+    }
+    .icon-container{
+        display: flex;
+        justify-content: space-around;
+        
+        .icon-item{
+            width: auto;
+        }
+    }
+    .content-container{
+        width: 100vw;
+        display: block;
+        text-align: center;
+
+        .banner{
+            height: 13rem;
+            background-color: #0080ff;
+            font-size: 3rem;
+            color: white;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+    }
+}

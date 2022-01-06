@@ -48,7 +48,6 @@ const Homepage = () => (
       </div>
     </div>
     <Banner />
-    <Footer />
   </div>
 );
 
