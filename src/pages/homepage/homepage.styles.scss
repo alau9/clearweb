@@ -9,18 +9,14 @@
 
   .icon-container {
     margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .icon-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .icon-item {
+      text-align: center;
+      .medium {
         cursor: pointer;
-
-        .medium {
-          height: 17rem;
-        }
       }
     }
   }
@@ -32,10 +28,15 @@
     .content-section {
       margin-left: 6rem;
       margin-right: 6rem;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
 
       .content-title {
         text-align: center;
+      }
+      .content {
+        text-align: center;
+        margin: 2rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -44,24 +45,27 @@
     display: inline;
     align-items: center;
     justify-content: center;
+  }
 
-    .content {
+  .content {
+    text-align: center;
+    margin: 2rem;
+    margin-top: 4rem;
+  }
+
+  .brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .brand-section {
       text-align: center;
-      margin: 2rem;
-      margin-top: 4rem;
-    }
-
-    .icon-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-
-      .icon-item {
+      display: block;
+      .medium {
+        margin: 3rem;
+        height: 13rem;
         cursor: pointer;
-
-        .medium {
-          height: 13rem;
-        }
       }
     }
   }

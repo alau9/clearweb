@@ -1,0 +1,44 @@
+.pricing-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .main-content{
+        width: 60%;
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+    }
+
+    .content-footnote{
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .price{
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .content-title{
+        font-size: 1.3rem;
+        margin: 2rem;
+    }
+
+    .content{
+        opacity: .95;
+        margin: 2rem;
+    }
+
+    .image{
+        margin-top: 5rem;
+        height: 45rem;
+        cursor: pointer;
+    }
+}
+

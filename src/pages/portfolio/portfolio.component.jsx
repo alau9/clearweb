@@ -3,6 +3,7 @@ import CustomButton from "../../components/custom-button/custom-button.component
 import { useNavigate } from "react-router-dom";
 
 import "./portfolio.styles.scss";
+import ContactUs from "../../components/contact-us/contact-us.component";
 
 const PortfolioPage = () => {
   const navigate = useNavigate();
@@ -41,10 +42,7 @@ const PortfolioPage = () => {
             Website
         </CustomButton>
         </div>
-        <h3 className="title">Schedule a free consultation!</h3>
-        <CustomButton onClick={() => navigate("/contact")}>
-          Contact Us
-        </CustomButton>
+       <ContactUs />
         <div className="content-section">
           <h4>Festival Shred</h4>
           <div>Deliverables:</div>

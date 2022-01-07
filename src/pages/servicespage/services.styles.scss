@@ -5,12 +5,14 @@
     .title{
         font-size: 3rem;
     }
+
     .icon-container{
-        display: flex;
-        justify-content: space-around;
-        
-        .icon-item{
-            width: auto;
+
+        .image{
+            margin-top: 5rem;
+            cursor: pointer;
+            margin-left: 3rem;
+            margin-right: 3rem;
         }
     }
 
