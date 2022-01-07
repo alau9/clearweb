@@ -1,0 +1,14 @@
+.portfolio-page {
+  display: flex;
+  justify-content: center;
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .content-container {
+    width: 100vw;
+    display: block;
+    text-align: center;
+  }
+}

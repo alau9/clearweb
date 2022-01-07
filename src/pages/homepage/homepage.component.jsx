@@ -151,7 +151,7 @@ const openInNewTab = (url) => {
         </div>
       </div>
       <div className="content" >
-        <div onClick={() => navigate('/portfolio')}><CustomButton>Portfolio</CustomButton></div>
+        <div ><CustomButton onClick={() => navigate('/portfolio')}>Portfolio</CustomButton></div>
       </div>
     </div>
   </div>
