@@ -1,0 +1,28 @@
+.website-management{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 3rem;
+        justify-content: space-around;
+        font-size: 2rem;
+
+        .col{
+            margin: 7rem;
+            
+            .price{
+                font-weight: bold;
+            }
+
+            .foot-note{
+                font-size: 1rem;
+            }
+            
+        }
+    }
+}

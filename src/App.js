@@ -13,6 +13,7 @@ import Footer from './components/footer/footer.component';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import WebsiteManagementPage from './pages/website-management/websitemanagement.component';
 
 library.add(fab, faCheckSquare, faCoffee)
 
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/portfolio' element={<PortfolioPage/>} />
           <Route exact path='/pricing' element={<PricingPage/>} />
           <Route exact path='/seo' element={<SEOPage/>} />
+          <Route exact path='/site-manager' element={<WebsiteManagementPage/>} />
         </Routes>
         <Footer/>
      </div>

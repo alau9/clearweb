@@ -7,11 +7,11 @@ import './seo.styles.scss'
 const SEOPage = () => {
     return(
         <div className="seo-page">
-            <h1>SEO</h1>
-            <h1>CLEAR WEB VALUE: COMPETITIVE ADVANTAGE</h1>
+            <h1 className="title">SEO</h1>
+            <h1 className="title">CLEAR WEB VALUE: COMPETITIVE ADVANTAGE</h1>
             <CustomButton>Pricing</CustomButton>
             <div className="row">
-                <div>
+                <div className="content-list">
                     <h2>On-page SEO</h2>
                     <ul>
                         <li>Keyword optimization</li>
@@ -20,7 +20,7 @@ const SEOPage = () => {
                         <li>Alt tags</li>
                     </ul>
                 </div>
-                <div>
+                <div className="content-list">
                     <h2>Off-page SEO</h2>
                     <ul>
                         <li>Backlinks</li>
@@ -28,7 +28,7 @@ const SEOPage = () => {
                         <li>Social reputation</li>
                     </ul>
                 </div>
-                <div>
+                <div className="content-list">
                     <h2>Technical SEO</h2>
                     <ul>
                         <li>Structured data</li>
@@ -38,7 +38,7 @@ const SEOPage = () => {
                 </div>
             </div>
             <ContactUs/>
-        </div>
+        </div> 
         
     )
 }
