@@ -12,7 +12,7 @@ const SEOPage = () => {
             <CustomButton>Pricing</CustomButton>
             <div className="row">
                 <div className="content-list">
-                    <h2>On-page SEO</h2>
+                    <h2 className="list-title">On-page SEO</h2>
                     <ul>
                         <li>Keyword optimization</li>
                         <li>Metadata</li>
@@ -21,7 +21,7 @@ const SEOPage = () => {
                     </ul>
                 </div>
                 <div className="content-list">
-                    <h2>Off-page SEO</h2>
+                    <h2 className="list-title">Off-page SEO</h2>
                     <ul>
                         <li>Backlinks</li>
                         <li>Authority</li>
@@ -29,7 +29,7 @@ const SEOPage = () => {
                     </ul>
                 </div>
                 <div className="content-list">
-                    <h2>Technical SEO</h2>
+                    <h2 className="list-title">Technical SEO</h2>
                     <ul>
                         <li>Structured data</li>
                         <li>Indexing</li>
@@ -39,7 +39,7 @@ const SEOPage = () => {
             </div>
             <ContactUs/>
         </div> 
-        
+
     )
 }
 

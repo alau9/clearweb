@@ -6,7 +6,7 @@ import ServicesPage from './pages/servicespage/services.component';
 import PortfolioPage from './pages/portfolio/portfolio.component';
 import PricingPage from './pages/pricing/pricing.component';
 import SEOPage from './pages/seo/seo.component';
-
+import SocialPage from './pages/social/social.component';
 
 import Footer from './components/footer/footer.component';
 
@@ -29,6 +29,7 @@ function App() {
           <Route exact path='/pricing' element={<PricingPage/>} />
           <Route exact path='/seo' element={<SEOPage/>} />
           <Route exact path='/site-manager' element={<WebsiteManagementPage/>} />
+          <Route exact path='/social' element={<SocialPage/>} />
         </Routes>
         <Footer/>
      </div>

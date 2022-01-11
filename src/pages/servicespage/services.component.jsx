@@ -39,7 +39,7 @@ const ServicesPage = () => {
         <div className="banner">Add-Ons</div>
         <div className="icon-container">
           <img
-           onClick={() => navigate("/website-management")}
+           onClick={() => navigate("/site-manager")}
             className="image"
             src="https://i.ibb.co/Qf06mmF/Site-Manager-Clear-Web-1.png"
             alt="Site-Manager-Clear-Web-1"
