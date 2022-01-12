@@ -46,12 +46,14 @@ const PricingPage = () => {
       </div>
       <div className="image-container">
         <img
+          onClick={() => navigate("/site-manager")}
           className="image"
           src="https://i.ibb.co/vw9pqpn/Web-manager-add-on-Clear-Web.png"
           alt="Web-manager-add-on-Clear-Web"
           border="0"
         />
         <img
+          onClick={() => navigate("/social")}
           className="image"
           src="https://i.ibb.co/2gjQvN9/Social-media-add-on-Clear-Web.png"
           alt="Social-media-add-on-Clear-Web"

@@ -1,11 +1,9 @@
-.seo-page{
+.custom-code{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-
 
     .title{
         margin: 2rem;
@@ -19,7 +17,7 @@
         text-align: center;
         margin: 3rem;
         vertical-align: top;
-
+        
         .list-title{
             font-size: 2rem;
         }

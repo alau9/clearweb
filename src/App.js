@@ -7,6 +7,8 @@ import PortfolioPage from './pages/portfolio/portfolio.component';
 import PricingPage from './pages/pricing/pricing.component';
 import SEOPage from './pages/seo/seo.component';
 import SocialPage from './pages/social/social.component';
+import CustomCodePage from './pages/custom-code/custom-code.component';
+import AboutPage from './pages/about/about.component';
 
 import Footer from './components/footer/footer.component';
 
@@ -30,6 +32,8 @@ function App() {
           <Route exact path='/seo' element={<SEOPage/>} />
           <Route exact path='/site-manager' element={<WebsiteManagementPage/>} />
           <Route exact path='/social' element={<SocialPage/>} />
+          <Route exact path='/custom' element={<CustomCodePage/>} />
+          <Route exact path='/about' element={<AboutPage/>} />
         </Routes>
         <Footer/>
      </div>

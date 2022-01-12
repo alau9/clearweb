@@ -1,8 +1,11 @@
 import React from "react";
 import CustomButton from "../custom-button/custom-button.component";
+import { NavLink as Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee,  } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 import "./header.styles.scss"
 
@@ -27,8 +30,6 @@ return(
             <div className="header-items" onClick={() => openInNewTab('https://www.youtube.com/channel/UCydv7oPwYWUDjQy7AXcMF8A')}><FontAwesomeIcon icon={['fab', 'youtube']} /></div>
         </div>
         <div className="button-container"><CustomButton onClick={() => navigate('/pricing')}>Pricing</CustomButton></div>
-        <div>     
-  </div>
     </div>
 )}
 
