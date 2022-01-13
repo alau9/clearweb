@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import CustomButton from "../custom-button/custom-button.component";
 import { NavLink as Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 import "./header.styles.scss";
 
@@ -14,8 +14,11 @@ const Header = () => {
     if (newWindow) newWindow.opener = null;
   };
 
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Navbar className="header" expand="xl">
+    <Navbar className="header" expand="xl" expanded={expanded}>
+         <Container fluid>
       <Navbar className="header-items left-side" onClick={() => navigate("/")}>
         <img
           className="logo"
@@ -24,17 +27,23 @@ const Header = () => {
           border="0"
         />
       </Navbar>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="right-side" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="right-side" onClick={() => setExpanded(expanded ? false : "expanded")} />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="justify-content-end right-side">
           <Nav.Item
             className="header-items"
-            onClick={() => navigate("/services")}
+
           >
-            Services
+            <Link to="/services" onClick={() => setExpanded(false)}>Services</Link>
           </Nav.Item>
-          <Nav.Item className="header-items" onClick={() => navigate("/about")}>
-            About
+          <Nav.Item className="header-items" >
+          <Link to="/about" onClick={() => setExpanded(false)}>About</Link>
+          </Nav.Item>
+          <Nav.Item
+            className="header-items"
+            onClick={() => navigate("/portfolio")}
+          >
+            <Link to="/portfolio" onClick={() => setExpanded(false)}>Portfolio</Link>
           </Nav.Item>
           <Nav.Item
             className="header-items"
@@ -50,12 +59,7 @@ const Header = () => {
           >
             <FontAwesomeIcon icon={["fab", "twitter"]} />
           </Nav.Item>
-          <Nav.Item
-            className="header-items"
-            onClick={() => navigate("/portfolio")}
-          >
-            Portfolio
-          </Nav.Item>
+
           <Nav.Item
             className="header-items"
             onClick={() =>
@@ -74,13 +78,14 @@ const Header = () => {
           >
             <FontAwesomeIcon icon={["fab", "youtube"]} />
           </Nav.Item>
-          <Nav.Item className="button-container">
-            <CustomButton onClick={() => navigate("/pricing")}>
-              Pricing
-            </CustomButton>
+          <Nav.Item className="button-container ">
+            
+            <Link to="/pricing" onClick={() => setExpanded(false)}><CustomButton >Pricing    </CustomButton></Link>
+        
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };
