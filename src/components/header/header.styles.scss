@@ -21,12 +21,18 @@
         cursor: pointer;
         margin: 1rem;
         color: black;
+        
+        @media (max-width: 1197px){
+            margin: 0rem;
+            padding: 0rem;
+        }
 
         .logo{
             height: 1.5rem;
 
             @media (min-width: 768px) {
                 height: 3rem;
+                width: 40rem;
             }
         }
     }

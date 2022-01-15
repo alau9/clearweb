@@ -1,6 +1,10 @@
 import React from "react";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import { useNavigate } from "react-router-dom";
+import {ReactComponent as DevelopementImage} from '../../assets/clear-web-development.svg'
+import {ReactComponent as DesignImage} from '../../assets/clear-web-design.svg'
+import {ReactComponent as SeoImage} from '../../assets/clear-web-seo.svg'
+import {ReactComponent as SiteImage} from '../../assets/clear-web-site-manager.svg'
 
 import "./homepage.styles.scss";
 
@@ -21,33 +25,28 @@ const Homepage = () => {
       ></div>
       <div className="icon-container">
         <div className="icon-section">
-          <img
+          <DevelopementImage
             onClick={() => navigate("/pricing")}
             className="medium"
-            src="https://i.ibb.co/GCWX24s/Development-Clear-Web.png"
             alt="Development-Clear-Web"
-            border="0"
           />
 
-          <img
+          <DesignImage
             onClick={() => navigate("/pricing")}
             className="medium"
-            src="https://i.ibb.co/6tgtZnf/Design-Clear-Web.png"
             alt="Design-Clear-Web"
             border="0"
           />
 
-          <img
+          <SeoImage
             onClick={() => navigate("/seo")}
             className="medium"
-            src="https://i.ibb.co/G3Jmrsq/SEO-Clear-Web.png"
             alt="SEO-Clear-Web"
             border="0"
           />
-          <img
+          <SiteImage
             onClick={() => navigate("/site-manager")}
             className="medium"
-            src="https://i.ibb.co/Qf06mmF/Site-Manager-Clear-Web-1.png"
             alt="Site-Manager-Clear-Web-1"
             border="0"
           />

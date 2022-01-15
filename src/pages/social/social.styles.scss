@@ -14,10 +14,14 @@
 
     .content-list{
         display: inline-block;
-        text-align: center;
-        margin: 3rem;
+        text-align:center;
+        margin: 0rem;
         vertical-align: top;
+        list-style-position: inside;
 
-      
+        .foot-note{
+            text-align: center;
+            padding-right: 32px;
+        }
     }
 }
