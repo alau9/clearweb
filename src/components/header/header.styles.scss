@@ -2,16 +2,45 @@
     margin-top: 2rem;
     display: flex;
     align-items: center;
+    margin-bottom: 3.5rem;
+    background-color: white;
+
+    .nav-container{
+        @media (max-width: 1197px){
+            
+        }
+    }
 
     .right-side{
         margin-left: auto;
         margin-right: 1rem;
         display: flex;
+
+        @media (max-width: 1197px){
+            margin-top: 7rem;
+        }
         
+        .brand-logo{
+            @media (max-width: 1197px){
+                margin-top: 7rem;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 3rem;
+                justify-content: center;
+            }
+            
+            .header-items{
+                @media (max-width: 1197px){
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+            }
+        }
+
         .header-items{
             @media (max-width: 1197px){
                 margin: auto;
-                font-size: 4rem;
+                font-size: 2.5rem;
                 align-items: center;
             }
             
@@ -29,6 +58,7 @@
 
         .logo{
             height: 1.5rem;
+            width: 12rem;
 
             @media (min-width: 768px) {
                 height: 3rem;

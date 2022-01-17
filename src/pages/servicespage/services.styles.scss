@@ -4,15 +4,15 @@
 
     .title{
         font-size: 3rem;
+        margin-bottom: 3.5rem;
     }
 
     .icon-container{
-
+        justify-content: space-evenly;
         .image{
-            margin-top: 5rem;
+
             cursor: pointer;
-            margin-left: 3rem;
-            margin-right: 3rem;
+
         }
     }
 

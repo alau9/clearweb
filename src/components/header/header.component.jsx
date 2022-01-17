@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import CustomButton from "../custom-button/custom-button.component";
-import {ReactComponent as Logo} from '../../assets/clear-web-logo.svg'
+import { ReactComponent as Logo } from "../../assets/clear-web-logo.svg";
 import { NavLink as Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar, Nav, Container } from "react-bootstrap";
-
 
 import "./header.styles.scss";
 
@@ -18,22 +17,27 @@ const Header = () => {
 
   const [expanded, setExpanded] = useState(false);
 
+
   return (
-    <Navbar className="header" expand="xl" expanded={expanded}>
+    <Navbar className="header"  expand="xl" expanded={expanded}>
       <Container fluid>
         <Navbar
           className="header-items left-side"
           onClick={() => navigate("/")}
         >
-          <Logo className="logo"
-          />
+          <Logo className="logo" />
         </Navbar>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          className="right-side"
           onClick={() => setExpanded(expanded ? false : "expanded")}
-        />
-        <Navbar.Collapse id="basic-navbar-nav">
+        >
+          {expanded ? (
+            <FontAwesomeIcon icon="times" />
+          ) : (
+            <FontAwesomeIcon icon="bars" />
+          )}
+        </Navbar.Toggle>
+        <Navbar.Collapse id="basic-navbar-nav" className="nav-container">
           <Nav className="justify-content-end right-side">
             <Nav.Item className="header-items">
               <Link to="/services" onClick={() => setExpanded(false)}>
@@ -53,39 +57,43 @@ const Header = () => {
                 Portfolio
               </Link>
             </Nav.Item>
-            <Nav.Item
-              className="header-items"
-              onClick={() =>
-                openInNewTab("https://www.facebook.com/clearweb.cloud")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
-            </Nav.Item>
-            <Nav.Item
-              className="header-items"
-              onClick={() => openInNewTab("https://twitter.com/ClearwebCloud")}
-            >
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
-            </Nav.Item>
+            <Nav className="brand-logo">
+              <Nav.Item
+                className="header-items"
+                onClick={() =>
+                  openInNewTab("https://www.facebook.com/clearweb.cloud")
+                }
+              >
+                <FontAwesomeIcon icon={["fab", "facebook"]} />
+              </Nav.Item>
+              <Nav.Item
+                className="header-items"
+                onClick={() =>
+                  openInNewTab("https://twitter.com/ClearwebCloud")
+                }
+              >
+                <FontAwesomeIcon icon={["fab", "twitter"]} />
+              </Nav.Item>
 
-            <Nav.Item
-              className="header-items"
-              onClick={() =>
-                openInNewTab("https://www.instagram.com/clearweb.cloud/")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "instagram"]} />
-            </Nav.Item>
-            <Nav.Item
-              className="header-items"
-              onClick={() =>
-                openInNewTab(
-                  "https://www.youtube.com/channel/UCydv7oPwYWUDjQy7AXcMF8A"
-                )
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "youtube"]} />
-            </Nav.Item>
+              <Nav.Item
+                className="header-items"
+                onClick={() =>
+                  openInNewTab("https://www.instagram.com/clearweb.cloud/")
+                }
+              >
+                <FontAwesomeIcon icon={["fab", "instagram"]} />
+              </Nav.Item>
+              <Nav.Item
+                className="header-items"
+                onClick={() =>
+                  openInNewTab(
+                    "https://www.youtube.com/channel/UCydv7oPwYWUDjQy7AXcMF8A"
+                  )
+                }
+              >
+                <FontAwesomeIcon icon={["fab", "youtube"]} />
+              </Nav.Item>
+            </Nav>
             <Nav.Item className="button-container ">
               <Link to="/pricing" onClick={() => setExpanded(false)}>
                 <CustomButton>Pricing </CustomButton>

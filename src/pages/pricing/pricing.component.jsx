@@ -4,6 +4,9 @@ import CustomButton from "../../components/custom-button/custom-button.component
 import { useNavigate } from "react-router-dom";
 import "./pricing.styles.scss";
 import ContactUs from "../../components/contact-us/contact-us.component";
+import {default as webaddon} from '../../assets/clear-web-web-manager-add-on.svg'
+import {default as socialaddon} from '../../assets/clear-web-social-media-add-on.svg'
+
 
 const PricingPage = () => {
   const navigate = useNavigate();
@@ -48,14 +51,14 @@ const PricingPage = () => {
         <img
           onClick={() => navigate("/site-manager")}
           className="image"
-          src="https://i.ibb.co/vw9pqpn/Web-manager-add-on-Clear-Web.png"
+          src={webaddon}
           alt="Web-manager-add-on-Clear-Web"
           border="0"
         />
         <img
           onClick={() => navigate("/social")}
           className="image"
-          src="https://i.ibb.co/2gjQvN9/Social-media-add-on-Clear-Web.png"
+          src={socialaddon}
           alt="Social-media-add-on-Clear-Web"
           border="0"
         />

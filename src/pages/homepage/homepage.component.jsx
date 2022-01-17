@@ -1,10 +1,19 @@
 import React from "react";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import { useNavigate } from "react-router-dom";
-import {ReactComponent as DevelopementImage} from '../../assets/clear-web-development.svg'
-import {ReactComponent as DesignImage} from '../../assets/clear-web-design.svg'
-import {ReactComponent as SeoImage} from '../../assets/clear-web-seo.svg'
-import {ReactComponent as SiteImage} from '../../assets/clear-web-site-manager.svg'
+import { default as developement } from "../../assets/clear-web-development.svg";
+import { default as design } from "../../assets/clear-web-design.svg";
+import { default as seo } from "../../assets/clear-web-seo.svg";
+import { default as site } from "../../assets/clear-web-site-manager.svg";
+import { default as social } from "../../assets/clear-web-social-media.svg";
+import { default as custom } from "../../assets/clear-web-custom-code.svg";
+import { default as hoochybooch } from "../../assets/hoochy-booch-kombucha-logo.svg";
+import { default as festivalshred } from "../../assets/festival-shred-logo.svg";
+import { default as floathouse } from "../../assets/float-house-logo.svg";
+import { default as utterlycrypto } from "../../assets/utterly-crypto-logo.svg";
+import { default as plentyhardkombucha } from "../../assets/plenty-hard-kombucha-logo.svg";
+import { default as justgosmoothie } from "../../assets/just-go-logo.svg";
+import { default as frame } from "../../assets/clear-web-frame.svg";
 
 import "./homepage.styles.scss";
 
@@ -25,27 +34,31 @@ const Homepage = () => {
       ></div>
       <div className="icon-container">
         <div className="icon-section">
-          <DevelopementImage
+          <img
             onClick={() => navigate("/pricing")}
+            src={developement}
             className="medium"
             alt="Development-Clear-Web"
           />
 
-          <DesignImage
+          <img
             onClick={() => navigate("/pricing")}
+            src={design}
             className="medium"
             alt="Design-Clear-Web"
             border="0"
           />
 
-          <SeoImage
+          <img
             onClick={() => navigate("/seo")}
+            src={seo}
             className="medium"
             alt="SEO-Clear-Web"
             border="0"
           />
-          <SiteImage
+          <img
             onClick={() => navigate("/site-manager")}
+            src={site}
             className="medium"
             alt="Site-Manager-Clear-Web-1"
             border="0"
@@ -53,20 +66,22 @@ const Homepage = () => {
           <img
             onClick={() => navigate("/social")}
             className="medium"
-            src="https://i.ibb.co/n7FKJcr/Social-Media-Clear-Web.png"
+            src={social}
             alt="Social-Media-Clear-Web"
             border="0"
           />
           <img
             onClick={() => navigate("/custom")}
             className="medium"
-            src="https://i.ibb.co/RYcfR5T/Custom-Code-Clear-Web.png"
+            src={custom}
             alt="Custom-Code-Clear-Web"
             border="0"
           />
         </div>
       </div>
-      <div className="content-container">
+      <div className="content-container" style={{
+            backgroundImage: `url("https://i.ibb.co/XjT3M1L/Clear-Web-Homepage-Banner-2.png")`,
+          }}>
         <div className="content-section">
           <h3 className="content-title">
             4 things that make the Clear Web team special
@@ -108,15 +123,16 @@ const Homepage = () => {
           <img
             onClick={() => openInNewTab("https://hoochybooch.com/")}
             className="medium"
-            src="https://i.ibb.co/ZKCW0jP/Hoochy-Booch-Kombucha-Logo.png"
+            src={hoochybooch}
             alt="Hoochy-Booch-Kombucha-Logo"
             border="0"
+            id="Hoochy-Booch"
           />
 
           <img
             onClick={() => openInNewTab("https://festivalshred.com/")}
             className="medium"
-            src="https://i.ibb.co/x1Szz8p/Festival-Shred-Logo.png"
+            src={festivalshred}
             alt="Festival-Shred-Logo"
             border="0"
           />
@@ -126,7 +142,7 @@ const Homepage = () => {
               openInNewTab("https://floathouse.ca/locations/vancouver")
             }
             className="medium"
-            src="https://i.ibb.co/X5GjVCC/Float-House-Logo.png"
+            src={floathouse}
             alt="Float-House-Logo"
             border="0"
           />
@@ -134,15 +150,17 @@ const Homepage = () => {
           <img
             onClick={() => openInNewTab("https://utterlycrypto.com/")}
             className="medium"
-            src="https://i.ibb.co/S6rHhD8/Utterly-Crypto-Logo.png"
+            src={utterlycrypto}
             alt="Utterly-Crypto-Logo"
+            id="Utterly-Crypto" 
             border="0"
           />
 
           <img
             onClick={() => openInNewTab("https://plentyhardkombucha.com/")}
             className="medium"
-            src="https://i.ibb.co/JnzznN5/Plenty-Hard-Kombucha-Logo.png"
+            id="Plenty-Hard"
+            src={plentyhardkombucha}
             alt="Plenty-Hard-Kombucha-Logo"
             border="0"
           />
@@ -150,13 +168,13 @@ const Homepage = () => {
           <img
             onClick={() => openInNewTab("https://justgosmoothie.com/")}
             className="medium"
-            src="https://i.ibb.co/vxh2yHy/Just-Go-Smoothie-logo-CW-sized.png"
+            id="Just-Go"
+            src={justgosmoothie}
             alt="Just-Go-Smoothie-logo-CW-sized"
             border="0"
           />
         </div>
       </div>
-
     </div>
   );
 };

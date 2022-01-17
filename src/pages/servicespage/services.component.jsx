@@ -1,5 +1,11 @@
 import React from "react";
 import CustomButton from "../../components/custom-button/custom-button.component";
+import {default as developement} from '../../assets/clear-web-development.svg'
+import {default as design} from '../../assets/clear-web-design.svg'
+import {default as seo} from '../../assets/clear-web-seo.svg'
+import {default as site} from '../../assets/clear-web-site-manager.svg'
+import {default as social} from '../../assets/clear-web-social-media.svg'
+import {default as custom} from '../../assets/clear-web-custom-code.svg'
 
 import { useNavigate } from "react-router-dom";
 
@@ -17,21 +23,21 @@ const ServicesPage = () => {
           <img
           onClick={() => navigate("/pricing")}
             className="image"
-            src="https://i.ibb.co/GCWX24s/Development-Clear-Web.png"
+            src={developement}
             alt="Development-Clear-Web"
             border="0"
           />
           <img
            onClick={() => navigate("/pricing")}
             className="image"
-            src="https://i.ibb.co/6tgtZnf/Design-Clear-Web.png"
+            src={design}
             alt="Design-Clear-Web"
             border="0"
           />
           <img
            onClick={() => navigate("/seo")}
             className="image"
-            src="https://i.ibb.co/G3Jmrsq/SEO-Clear-Web.png"
+            src={seo}
             alt="SEO-Clear-Web"
             border="0"
           />
@@ -41,21 +47,21 @@ const ServicesPage = () => {
           <img
            onClick={() => navigate("/site-manager")}
             className="image"
-            src="https://i.ibb.co/Qf06mmF/Site-Manager-Clear-Web-1.png"
+            src={site}
             alt="Site-Manager-Clear-Web-1"
             border="0"
           />
           <img
             onClick={() => navigate("/social")}
             className="image"
-            src="https://i.ibb.co/n7FKJcr/Social-Media-Clear-Web.png"
+            src={social}
             alt="Social-Media-Clear-Web"
             border="0"
           />
           <img
             onClick={() => navigate("/custom")}
             className="image"
-            src="https://i.ibb.co/RYcfR5T/Custom-Code-Clear-Web.png"
+            src={custom}
             alt="Custom-Code-Clear-Web"
             border="0"
           />
