@@ -108,17 +108,4 @@ const Header = () => {
 
 export default Header;
 
-// {<div className="header">
-// <div className="header-items left-side" onClick={() => navigate('/')}><img className="logo" src="https://i.ibb.co/LdMFpcL/Clear-Web-Logo.png" alt="Clear-Web-Logo" border="0" /></div>
-// <div className="right-side">
-//     <div className="header-items" onClick={() => navigate('/services')}>Services</div>
-//     <div className="header-items" onClick={() => navigate('/portfolio')} >Portfolio</div>
-//     <div className="header-items" onClick={() => navigate('/about')}>About</div>
-//     <div className="header-items" onClick={() => openInNewTab('https://www.facebook.com/clearweb.cloud')}><FontAwesomeIcon icon={['fab', 'facebook']} /></div>
-//     <div className="header-items" onClick={() => openInNewTab('https://twitter.com/ClearwebCloud')}><FontAwesomeIcon icon={['fab', 'twitter']} /></div>
-//     <div className="header-items" onClick={() => openInNewTab('https://www.instagram.com/clearweb.cloud/')}><FontAwesomeIcon icon={['fab', 'instagram']} /></div>
-//     <div className="header-items" onClick={() => openInNewTab('https://www.youtube.com/channel/UCydv7oPwYWUDjQy7AXcMF8A')}><FontAwesomeIcon icon={['fab', 'youtube']} /></div>
-// </div>
-// <div className="button-container"><CustomButton onClick={() => navigate('/pricing')}>Pricing</CustomButton></div>
-// </div>
-// )}
+
