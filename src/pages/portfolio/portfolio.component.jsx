@@ -14,11 +14,17 @@ const PortfolioPage = () => {
 
   return (
     <div className="portfolio-page">
-      <div className="content-container">
-        <h3 className="title">Featured Client List</h3>
-        <div className="content-section">
-          <h4>Hoochy 'Booch Kombucha</h4>
-          <div>Deliverables:</div>
+      <h3 className="title">Featured Client List</h3>
+      <div className="content-row">
+      <div
+          className="background-image"
+          style={{
+            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+          }}
+        ></div>
+        <div className="content-list">
+          <h3 className="content-title">Hoochy 'Booch Kombucha</h3>
+          <div className="list-title">Deliverables:</div>
           <ul>
             <li>Web Developement</li>
             <li>Graphic Design</li>
@@ -26,26 +32,50 @@ const PortfolioPage = () => {
             <li>Website Management</li>
             <li>Business Developement and Strategy</li>
           </ul>
-          <CustomButton onClick={() => openInNewTab('https://hoochybooch.com/')}>
+          <CustomButton
+            onClick={() => openInNewTab("https://hoochybooch.com/")}
+          >
             Website
-        </CustomButton>
-          <h4>Float House Gastown</h4>
-          <div>Deliverables:</div>
-          <ul>
-            <li>Web Developement</li>
-            <li>Graphic Design</li>
-            <li>Advanced SEO</li>
-            <li>Website Management</li>
-            <li>Business Developement and Strategy</li>
-          </ul>
-          <CustomButton onClick={() => openInNewTab('https://floathouse.ca/locations/vancouver')}>
-            Website
-        </CustomButton>
+          </CustomButton>
         </div>
-       <ContactUs />
-        <div className="content-section">
-          <h4>Festival Shred</h4>
-          <div>Deliverables:</div>
+      </div>
+      <div className="content-row">
+      <div
+          className="background-image"
+          style={{
+            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+          }}
+        ></div>
+        <div className="content-list">
+          <h3 className="content-title">Float House Gastown</h3>
+          <div className="list-title">Deliverables:</div>
+          <ul>
+            <li>Web Developement</li>
+            <li>Graphic Design</li>
+            <li>Advanced SEO</li>
+            <li>Website Management</li>
+            <li>Business Developement and Strategy</li>
+          </ul>
+          <CustomButton
+            onClick={() =>
+              openInNewTab("https://floathouse.ca/locations/vancouver")
+            }
+          >
+            Website
+          </CustomButton>
+        </div>
+      </div>
+      <ContactUs />
+      <div className="content-row">
+      <div
+          className="background-image"
+          style={{
+            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+          }}
+        ></div>
+        <div className="content-list">
+          <h3 className="content-title">Festival Shred</h3>
+          <div className="list-title">Deliverables:</div>
           <ul>
             <li>Web Developement</li>
             <li>Graphic Design</li>
@@ -54,19 +84,33 @@ const PortfolioPage = () => {
             <li>Website Management</li>
             <li>Business Developement and Strategy</li>
           </ul>
-          <CustomButton onClick={() => openInNewTab('https://festivalshred.com/')}>
+          <CustomButton
+            onClick={() => openInNewTab("https://festivalshred.com/")}
+          >
             Website
-        </CustomButton>
-          <h4>Plenty Hard Kombucha</h4>
-          <div>Deliverables:</div>
+          </CustomButton>
+        </div>
+      </div>
+      <div className="content-row">
+      <div
+          className="background-image"
+          style={{
+            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+          }}
+        ></div>
+        <div className="content-list">
+          <h3 className="content-title">Plenty Hard Kombucha</h3>
+          <div className="list-title">Deliverables:</div>
           <ul>
             <li>Web Developement</li>
             <li>Advanced SEO</li>
             <li>Website Management</li>
           </ul>
-          <CustomButton onClick={() => openInNewTab('https://plentyhardkombucha.com/')}>
+          <CustomButton
+            onClick={() => openInNewTab("https://plentyhardkombucha.com/")}
+          >
             Website
-        </CustomButton>
+          </CustomButton>
         </div>
       </div>
     </div>
