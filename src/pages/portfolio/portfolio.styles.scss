@@ -1,10 +1,14 @@
 .portfolio-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   margin-bottom: 10rem;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 
   .content-row {
     display: flex;
@@ -15,6 +19,7 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
+      justify-content: center;
     }
 
     .background-image {
@@ -22,6 +27,13 @@
       height: 20rem;
       background-position: center;
       background-size: cover;
+
+      @media (max-width: 768px) {
+       width: 20rem;
+       background-size: 20rem;
+       height: 15rem;
+       background-repeat: no-repeat;
+      }
     }
 
     .content-title{
@@ -35,7 +47,7 @@
       vertical-align: top;
       margin-left: 2rem;
       margin-right: 2rem;
-      width: 40rem;
+     
 
       .list-title {
         font-size: 1.3rem;

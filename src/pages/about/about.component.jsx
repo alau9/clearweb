@@ -5,9 +5,11 @@ import "./about.styles.scss";
 const AboutPage = () => (
   <div className="about-page">
     <h1 className="title">About Us</h1>
-    <div className="row">
-      <div>
+    <div className="content-row">
+      <div className="content-col">
         <h1 className="content-title">Clear Web Team</h1>
+        <br />
+        <br />
         <div className="content">
           We have years of experience building and optimizing the online
           presence of various businesses, whether they are Small, Corporate, or
@@ -24,6 +26,9 @@ const AboutPage = () => (
           custom code integrations.
         <br />
         <br />
+        We look forward to optimizing your business!
+        <br />
+        <br />
             Sincerely,
             <br />
             <br />
@@ -33,6 +38,13 @@ const AboutPage = () => (
             <br />
             Clear Web Ltd.
         </div>
+      </div>
+      <div className="content-col">
+        <h2>Email</h2>
+        <div>info@clearweb.cloud</div>
+        <br />
+        <h2>Phone</h2>
+        <div>+1 (604) 356-8021</div>
       </div>
     </div>
   </div>

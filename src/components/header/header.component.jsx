@@ -44,17 +44,17 @@ const Header = () => {
                 Services
               </Link>
             </Nav.Item>
-            <Nav.Item className="header-items">
-              <Link to="/about" onClick={() => setExpanded(false)}>
-                About
-              </Link>
-            </Nav.Item>
             <Nav.Item
               className="header-items"
               onClick={() => navigate("/portfolio")}
             >
               <Link to="/portfolio" onClick={() => setExpanded(false)}>
                 Portfolio
+              </Link>
+            </Nav.Item>
+            <Nav.Item className="header-items">
+              <Link to="/about" onClick={() => setExpanded(false)}>
+                About
               </Link>
             </Nav.Item>
             <Nav className="brand-logo">
