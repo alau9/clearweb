@@ -3,8 +3,18 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 3.5rem;
-    .title{
-        margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    // margin: 3.5rem;
+
+    .titles{
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        font-size: 3rem;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            font-size: 1.8rem;
+            margin-top: 7rem;
+          }
     }
 }

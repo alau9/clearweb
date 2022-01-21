@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
-    align-items: center;
+  
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -58,7 +58,7 @@
 
     .content-list {
       margin: 0rem;
-      vertical-align: top;
+      vertical-align: text-top;
       margin-left: 2rem;
       margin-right: 2rem;
 

@@ -36,14 +36,14 @@ const WebsiteManagementPage = () => {
       <div className="content-row">
         <div className="content-list">
           <h2 className="list-title">Basic Web Management</h2>
-          <h2 className="list-title">$250/mo</h2>
+          <h2 className="list-title-pricing">$250/mo</h2>
           <ul>
             <li>Up to 5 hours/month</li>
           </ul>
         </div>
         <div className="content-list">
           <h2 className="list-title">Unlimited Web Management</h2>
-          <h2 className="list-title">$500/mo</h2>
+          <h2 className="list-title-pricing">$500+/mo</h2>
           <ul>
             <li className="foot-note">Unlimited means unlimited =)</li>
           </ul>

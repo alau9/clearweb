@@ -16,20 +16,23 @@ const Header = () => {
   };
 
   const [expanded, setExpanded] = useState(false);
+  const [top, setSticky] = useState(false);
 
 
   return (
-    <Navbar className="header"  expand="xl" expanded={expanded}>
+    <Navbar className={`header ${expanded}` }  expand="xl" expanded={expanded} sticky={top}>
       <Container fluid>
         <Navbar
           className="header-items left-side"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/") }
+          
         >
-          <Logo className="logo" />
+          <Logo className="logo"
+           onClick={() => {setExpanded(false); setSticky(false)}}/>
         </Navbar>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          onClick={() => setExpanded(expanded ? false : "expanded")}
+          onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}
         >
           {expanded ? (
             <FontAwesomeIcon icon="times" />
@@ -40,7 +43,7 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav" className="nav-container">
           <Nav className="justify-content-end right-side">
             <Nav.Item className="header-items">
-              <Link to="/services" onClick={() => setExpanded(false)}>
+              <Link to="/services" onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}>
                 Services
               </Link>
             </Nav.Item>
@@ -48,12 +51,12 @@ const Header = () => {
               className="header-items"
               onClick={() => navigate("/portfolio")}
             >
-              <Link to="/portfolio" onClick={() => setExpanded(false)}>
+              <Link to="/portfolio"onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}>
                 Portfolio
               </Link>
             </Nav.Item>
             <Nav.Item className="header-items">
-              <Link to="/about" onClick={() => setExpanded(false)}>
+              <Link to="/about" onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}>
                 About
               </Link>
             </Nav.Item>

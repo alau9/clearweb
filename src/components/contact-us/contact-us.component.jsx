@@ -11,7 +11,7 @@ const ContactUs = () => {
     
   return (
     <div className="contact">
-      <h3 className="title">Schedule a free consultation!</h3>
+      <h3 className="titles">Schedule a free consultation!</h3>
       <CustomButton onClick={() => navigate("/contact")}>
         Contact Us
       </CustomButton>

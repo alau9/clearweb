@@ -16,7 +16,7 @@ const PortfolioPage = () => {
     <div className="portfolio-page">
       <h3 className="title">Featured Client List</h3>
       <div className="content-row">
-      <div
+        <div
           className="background-image"
           style={{
             backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
@@ -40,7 +40,7 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="content-row">
-      <div
+        <div
           className="background-image"
           style={{
             backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
@@ -67,7 +67,7 @@ const PortfolioPage = () => {
       </div>
       <ContactUs />
       <div className="content-row">
-      <div
+        <div
           className="background-image"
           style={{
             backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
@@ -92,7 +92,7 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="content-row">
-      <div
+        <div
           className="background-image"
           style={{
             backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
