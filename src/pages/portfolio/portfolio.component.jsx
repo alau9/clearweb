@@ -43,7 +43,7 @@ const PortfolioPage = () => {
         <div
           className="background-image"
           style={{
-            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+            backgroundImage: `url("https://i.ibb.co/93MZwKc/Clear-Web-Client-Float-House-Gastown.png")`,
           }}
         ></div>
         <div className="content-list">
@@ -70,7 +70,7 @@ const PortfolioPage = () => {
         <div
           className="background-image"
           style={{
-            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+            backgroundImage: `url("https://i.ibb.co/YN5809X/Clear-Web-Client-Festival-Shred.png")`,
           }}
         ></div>
         <div className="content-list">
@@ -95,7 +95,7 @@ const PortfolioPage = () => {
         <div
           className="background-image"
           style={{
-            backgroundImage: `url("https://i.ibb.co/SKJKh1F/Clear-Web-Client-Hoochy-Booch-Kombucha.png")`,
+            backgroundImage: `url("https://i.ibb.co/jft6p4V/Plenty-Hard-kombucha-portfolio-Clear-Web.png")`,
           }}
         ></div>
         <div className="content-list">

@@ -32,9 +32,7 @@ const AboutPage = () => (
             Sincerely,
             <br />
             <br />
-            Adam Aichmair
-            <br />
-            Founder 
+            Clear Web Team
             <br />
             Clear Web Ltd.
         </div>
