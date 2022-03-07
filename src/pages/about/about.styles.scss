@@ -12,11 +12,9 @@
     .content-row {
         display: flex;
         flex-direction: row;
-        margin-top: 4rem;
-    
+ 
         @media (max-width: 768px) {
           flex-direction: column;
-          margin-top: 1rem;
           margin-left: 3rem;
           margin-right: 3rem;
         }
