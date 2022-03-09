@@ -8,7 +8,7 @@ import "./custom-code.styles.scss";
 const CustomCodePage = () => (
   <div className="custom-code">
     <h1 className="title">Custom Code</h1>
-    <h1 className="title">CLEAR WEB VALUE: UNIQUENESS</h1>
+    <h1 className="title"><b>CLEAR WEB VALUE:</b> UNIQUENESS</h1>
     <Link to="/pricing">
       <CustomButton>Pricing </CustomButton>
     </Link>

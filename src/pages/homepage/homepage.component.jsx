@@ -109,7 +109,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="portfolio-section">
-        <h1 className="content">See Our Recent Work!</h1>
+        <h1 className="content"><b>See Our Recent Work!</b></h1>
       </div>
       <div className="content">
         <div>

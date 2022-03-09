@@ -14,20 +14,22 @@
         flex-direction: row;
         margin-top: 4rem;
     
-        @media (max-width: 768px) {
+        @media (max-width: 1197px) {
           flex-direction: column;
           margin-top: 1rem;
           margin-left: 3rem;
           margin-right: 3rem;
+          margin-bottom: 3rem;
         }
 
         .content-col{
             width: 50%;
-            margin: 10rem;
+            margin-right: 10rem;
+            margin-left: 10rem;
             
-            @media (max-width: 768px) {
+            @media (max-width: 1197px) {
                 width: auto;
-                margin: 0rem;
+                margin-bottom: 3rem;
               }
         }
     }

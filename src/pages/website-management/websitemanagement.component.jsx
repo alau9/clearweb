@@ -8,7 +8,7 @@ const WebsiteManagementPage = () => {
   return (
     <div className="website-management">
       <h1 className="title">Site Management</h1>
-      <h1 className="title">CLEAR WEB VALUE: DEDICATION</h1>
+      <h1 className="title"><b>CLEAR WEB VALUE:</b> DEDICATION</h1>
       <Link to="/pricing">
         <CustomButton>Pricing </CustomButton>
       </Link>

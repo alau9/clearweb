@@ -25,20 +25,25 @@
       margin-right: 0;
       z-index: 998;
       font-size: 1.2rem;
+      
 
       @media (max-width: 768px) {
         width: 75vw;
         height: auto;
         text-align: start;
         padding: 1rem;
+        position: relative;
+        top: 12rem
+  
       }
       .para{
           margin: 2rem;
+          text-align: left;
       }
     }
 
     .background-image {
-        width: 50rem;
+        width: 40vw;
         height: 50rem;
         background-position: center;
         background-size: cover;
@@ -53,6 +58,8 @@
           background-size:contain;
           background-repeat: no-repeat;
           padding: 0;
+          position: relative;
+          bottom: 38rem;
         }
       }
 

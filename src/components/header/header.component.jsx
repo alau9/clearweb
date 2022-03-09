@@ -43,7 +43,7 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav" className="nav-container">
           <Nav className="justify-content-end right-side">
             <Nav.Item className="header-items">
-              <Link to="/services" onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}>
+              <Link to="/services" onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(false)}}>
                 Services
               </Link>
             </Nav.Item>
@@ -51,12 +51,12 @@ const Header = () => {
               className="header-items"
               onClick={() => navigate("/portfolio")}
             >
-              <Link to="/portfolio"onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}>
+              <Link to="/portfolio"onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(false)}}>
                 Portfolio
               </Link>
             </Nav.Item>
             <Nav.Item className="header-items">
-              <Link to="/about" onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(top ? false: "top")}}>
+              <Link to="/about" onClick={() => {setExpanded(expanded ? false : "expanded"); setSticky(false)}}>
                 About
               </Link>
             </Nav.Item>

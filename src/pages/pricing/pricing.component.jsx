@@ -14,7 +14,7 @@ const PricingPage = () => {
   return (
     <div className="pricing-page">
       <h1 className="title">Pricing</h1>
-      <h1 className="title">CLEAR WEB VALUE: TRANSPARENCY</h1>
+      <h1 className="title"><b>CLEAR WEB VALUE:</b> TRANSPARENCY</h1>
       <div className="main-content">
         There are many variables that affect the price of your website. This
         includes but is not limited to the number of unique landing pages,
@@ -25,7 +25,7 @@ const PricingPage = () => {
       </div>
       <h2 className="title">All-Inclusive Website Package</h2>
       <h1 className="price">$2500+</h1>
-      <h2 className="title">Whats Include?</h2>
+      <h2 className="title">Whats Included?!</h2>
       <div>
         <h4 className="content-title">Web Developement</h4>
         <div className="content">Custom web development</div>

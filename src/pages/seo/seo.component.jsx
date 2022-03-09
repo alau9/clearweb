@@ -9,7 +9,7 @@ const SEOPage = () => {
   return (
     <div className="seo-page">
       <h1 className="title">SEO</h1>
-      <h1 className="title">CLEAR WEB VALUE: COMPETITIVE ADVANTAGE</h1>
+      <h1 className="title"><b>CLEAR WEB VALUE:</b> COMPETITIVE ADVANTAGE</h1>
       <Link to="/pricing">
         <CustomButton>Pricing </CustomButton>
       </Link>

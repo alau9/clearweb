@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
-    align-items: center;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -19,29 +18,31 @@
       background-color: #0080ff;
       color: white;
       height: 30rem;
-      padding: 3rem;
+      padding:3rem;
       width: 40rem;
       margin-left: 0rem;
       margin-right: 0;
-      z-index: 999;
+      z-index: 998;
       font-size: 1.2rem;
-      text-align: left;
+      
 
       @media (max-width: 768px) {
         width: 75vw;
         height: auto;
         text-align: start;
         padding: 1rem;
+        position: relative;
+        top: 12rem
+  
       }
       .para{
-          margin-bottom: 2rem;
-          margin-top: 2rem;
+          margin: 2rem;
           text-align: left;
       }
     }
 
     .background-image {
-        width: 50rem;
+        width: 40vw;
         height: 50rem;
         background-position: center;
         background-size: cover;
@@ -56,12 +57,14 @@
           background-size:contain;
           background-repeat: no-repeat;
           padding: 0;
+          position: relative;
+          bottom: 38rem;
         }
       }
 
     .content-list {
       margin: 0rem;
-      vertical-align: top;
+      vertical-align: text-top;
       margin-left: 2rem;
       margin-right: 2rem;
 
