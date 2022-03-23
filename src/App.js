@@ -12,6 +12,8 @@ import AboutPage from './pages/about/about.component';
 
 import Footer from './components/footer/footer.component';
 
+import React,  {useEffect} from 'react';
+import ReactGA from 'react-ga'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faCheckSquare, faCoffee, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -21,6 +23,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 library.add(fab, faCheckSquare, faCoffee, faTimes, faBars)
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('UA-223845304-1');
+
+    //to report page view        
+    ReactGA.pageview(window.location.pathname)                          
+  }, []);
   
   return (
       <div>
